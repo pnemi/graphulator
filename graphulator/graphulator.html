@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <title>Graphulator ~ Graphing Calculator</title>
+
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<body>
+
+  <canvas id="c">Váš prohlížeč nepodporuje Canvas API</canvas>
+
+  <div id="coors">
+    <div><strong>x:</strong>&nbsp;<span id="coorX">0</span></div>
+    <div><strong>y:</strong>&nbsp;<span id="coorY">0</span></div>
+  </div>
+
+  <div id="exprs">
+    <div id="add-expr" onclick="graph.addExpr();">&#43;</div>
+    <input class="expr-input" type="text" placeholder="f(x)" onkeypress="submit(event, this);" />
+  </div>
+
+  <script src="parsexpr/parsexpr.min.js"></script>
+  <script src="graphulator.js"></script>
+
+</body>
+</html>

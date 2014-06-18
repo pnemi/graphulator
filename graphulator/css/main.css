@@ -1,0 +1,60 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+}
+
+div#coors {
+  position: fixed;
+  top: 0;
+  right: 20px;
+}
+
+div#coors span {
+  display: inline-block;
+  width: 40px;
+  line-height: 20px;
+}
+
+div#coors > div {
+  display: inline-block;
+  background: white;
+  border: 1px solid #309FFF;
+  border-top: none;
+  padding: 0 8px;
+  margin-left: 20px;
+  font: 11px Helvetica, Arial, sans-serif;
+  color: dodgerblue;
+}
+
+div#exprs {
+  position: fixed;
+  z-index: 9999;
+  bottom: 10px;
+  left: 10px;
+}
+
+div#exprs input.expr-input {
+  display: block;
+  margin-top: 10px;
+  padding: 3px 8px;
+  border: 2px solid transparent;
+  outline: none;
+}
+
+div#exprs #add-expr {
+  width: 18px;
+  height: 18px;
+  border: 2px solid transparent;
+  border-radius: 18px 18px 18px 18px;
+  font: bold 16px Helvetica, Arial, sans-serif;
+  text-align: center;
+  line-height: 18px;
+  color: #309FFF;
+  background: white;
+  cursor: pointer;
+}
